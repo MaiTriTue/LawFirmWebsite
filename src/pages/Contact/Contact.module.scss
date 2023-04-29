@@ -1,0 +1,31 @@
+@use '../../components/GlobalStyles/GlobalStyles.scss' as s;
+
+.wrapper {
+    width: 100%;
+    margin-top: 30vh;
+    min-height: 400px;
+    @include s.laptop {
+    }
+
+    @include s.tablet {
+    }
+
+    @include s.mobile {
+        margin-top: 7vh;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-title {
+    margin-bottom: 50px;
+}
+
+.contact-info_address {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}

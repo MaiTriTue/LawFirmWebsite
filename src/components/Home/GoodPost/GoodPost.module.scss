@@ -1,0 +1,57 @@
+@use '../../../components/GlobalStyles/GlobalStyles.scss' as s;
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper-post {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.wrapper-post_image {
+    width: 40%;
+
+    padding: 5px;
+    a {
+        display: block;
+        width: 100%;
+    }
+}
+
+.wrapper-post_image-img {
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.wrapper-post_content {
+    width: 60%;
+    padding: 10px;
+}
+
+.wrapper-post_title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333333;
+    padding-bottom: 15px;
+}
+
+.wrapper-post_discripsion {
+    font-size: 1.4rem;
+    color: #333333;
+
+    display: block;
+    display: -webkit-box;
+    line-height: 2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}

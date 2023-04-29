@@ -1,0 +1,103 @@
+@use '../../../components/GlobalStyles/GlobalStyles.scss' as s;
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.wrapper-topic_item {
+    width: 100%;
+}
+
+.wrapper-topic_item-title {
+    background-color: #e8e8e8;
+    margin-bottom: 10px;
+    .topic_item-title {
+        display: inline-block;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        color: #a52a2a;
+        padding: 0 15px;
+        border-bottom: 2px solid #f3a400;
+    }
+}
+
+.wrapper-topic_item-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.item-content_newpost {
+    width: 60%;
+    padding-right: 10px;
+}
+
+.item-content_newpost-title {
+    padding-bottom: 15px;
+    .newpost-title {
+        font-size: 1.6rem;
+        color: #333333;
+    }
+}
+
+.item-content_newpost-content {
+    width: 100%;
+
+    display: block;
+    display: -webkit-box;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    .item-content_image {
+        width: 40%;
+        padding: 0 20px 10px 20px;
+        float: left;
+
+        .item-content_image-img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .item-content_discription {
+        font-size: 1.4rem;
+        color: #000;
+    }
+}
+
+.item-content_newquestion {
+    width: 40%;
+    padding-left: 10px;
+
+    .topic_item-question {
+        margin: 0 10px 10px 10px;
+        font-size: 1.2rem;
+        color: #666666;
+        display: block;
+        display: -webkit-box;
+        line-height: 1.6;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}
+
+.wrapper-topic_item-question {
+    margin-top: 5px;
+
+    .topic_item-question {
+        padding: 6px 0 0 10px;
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+        color: #666666;
+    }
+}

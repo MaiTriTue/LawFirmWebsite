@@ -1,0 +1,104 @@
+@use '../../../components/GlobalStyles/GlobalStyles.scss' as s;
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper-slides_service {
+    width: var(--default-layout-width);
+    overflow: hidden;
+}
+
+.wrapper-slides_service-title {
+    line-height: 3rem;
+    padding-left: 10px;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    background: #f6f5f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .slides_service-title {
+        display: block;
+        h3 {
+            font-size: 1.4rem;
+            color: #96632f;
+        }
+    }
+
+    .wrapper-slides_service-control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-control {
+        cursor: pointer;
+        padding: 0 10px;
+    }
+
+    .service-control_left {
+        font-size: 1.4rem;
+    }
+
+    .service-control_right {
+        font-size: 1.4rem;
+    }
+}
+
+.slides-service {
+    padding: 10px 0;
+    width: calc(var(--default-layout-width) * 2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: all 2s ease-in-out;
+}
+
+.wrapper-slides-service_item {
+    width: calc(var(--default-layout-width) / 4);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 10px;
+}
+
+.wrapper-slides-service_item-image {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.slides-service_item-link {
+    width: 100%;
+}
+
+.slides-service_item-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper-slides-service_item-title {
+    width: 50%;
+}
+
+.slides-service_item-link {
+}
+
+.slides-service_item-title {
+    font-size: 1.2rem;
+    color: #333333;
+    display: block;
+    display: -webkit-box;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.slides-service_item-title:hover {
+    color: #96632f;
+}

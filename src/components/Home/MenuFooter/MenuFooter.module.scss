@@ -1,0 +1,146 @@
+@use '../../../components/GlobalStyles/GlobalStyles.scss' as s;
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+//  navbar one
+
+.wrapper-menu-footer {
+    width: 100%;
+
+    h4 {
+        font-size: 1.2rem;
+    }
+}
+
+.menu-footer_one {
+    width: 100%;
+    background-color: #b17436;
+    line-height: 2.2rem;
+    // padding-left: 20px;
+}
+
+.menu-footer_one-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+
+    // li {
+    //     border-right: 1px solid #fff;
+    // }
+    li:not(:last-child) {
+        // padding: 0 2%;
+        border-right: 1px solid #fff;
+    }
+}
+
+.menu-footer_one-title {
+    // padding: 0 ;
+}
+
+.one-title_link:first-child {
+    padding-left: 20px;
+}
+
+.one-title_link {
+    padding-right: 30px;
+    display: block;
+    // padding: 0 30px 0 10px;
+    .one-title_icon {
+        width: 1.4rem;
+        color: #fff;
+    }
+
+    h4 {
+        color: #fff;
+    }
+}
+
+// navbar two
+
+.menu-footer_two {
+    width: 100%;
+
+    background-color: #ebebeb;
+    line-height: 2.5rem;
+}
+
+.menu-footer_two-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+
+    li {
+        padding-left: 20px;
+    }
+    span {
+        font-size: 1.2rem;
+        color: #000000;
+    }
+}
+
+.menu-footer_two-title {
+}
+
+.two-title_link {
+}
+
+// navbar three
+
+.menu-footer_three {
+    width: 100%;
+    line-height: 3rem;
+    padding: 20px 0;
+}
+
+.menu-footer_three-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    li {
+        width: 25%;
+    }
+    span {
+        font-size: 1.2rem;
+        color: #333333;
+        font-weight: 500;
+    }
+
+    li:hover {
+        span {
+            color: red;
+        }
+    }
+}
+
+.menu-footer_three-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.three-title_icon {
+    font-size: 1rem;
+    color: #333333;
+    padding-right: 5px;
+}
+
+.three-title_link {
+    width: 100%;
+    display: block;
+    padding: 5px 0;
+}
